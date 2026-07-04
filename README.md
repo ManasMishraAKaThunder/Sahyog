@@ -1,6 +1,6 @@
-# TeamForge — Enterprise Team Management Platform
+# SAHYOG — Enterprise Team Management Platform
 
-TeamForge is a full-stack, microservices-based team management platform —
+SAHYOG is a full-stack, microservices-based team management platform —
 teams, members, projects, tasks, roles/permissions, real-time notifications,
 and analytics — built the way large enterprise systems are: an API Gateway in
 front of independently deployable services, event-driven communication,
@@ -147,7 +147,7 @@ flowchart TD
 ## 5. Folder structure
 
 ```
-teamforge/
+SAHYOG/
 ├── README.md                   ← you are here
 ├── docs/
 │   ├── ROADMAP.md               Build order & progress tracker
@@ -201,7 +201,7 @@ The dashboard follows a persistent sidebar + topbar app-shell layout:
 
 Visual identity (details in `frontend/DESIGN.md` once Phase 1 styling lands):
 dark steel sidebar, light content area, an ember/amber accent (nods to the
-"Forge" in TeamForge) used sparingly for active states and primary actions —
+"Forge" in Sahyog) used sparingly for active states and primary actions —
 Space Grotesk for headings, Inter for body text, JetBrains Mono for metrics.
 
 ---
