@@ -2,6 +2,7 @@ import Layout from '@/components/Layout.jsx'
 import StatCard from '@/components/StatCard.jsx'
 import TeamVelocityChart from '@/charts/TeamVelocityChart.jsx'
 import { Users2, ListChecks, CheckCircle2, Gauge } from 'lucide-react'
+import ActivityFeed from "@/components/ActivityFeed";
 
 function Dashboard() {
   return (
@@ -41,6 +42,7 @@ function Dashboard() {
           trendDirection="up"
         />
       </div>
+      <ActivityFeed />
     </Layout>
   )
 }
