@@ -1,4 +1,5 @@
 // src/components/TeamCard.jsx
+import { Link } from 'react-router-dom'
 import { Users2 } from "lucide-react";
 import { TEAM_STATUS } from "@/lib/mockData";
 
@@ -17,11 +18,14 @@ const STATUS_CONFIG = {
   },
 };
 
-export default function TeamCard({ name, memberCount, status }) {
+export default function TeamCard({ id, name, memberCount, status }) {
   const config = STATUS_CONFIG[status];
 
   return (
-    <div className="bg-white border border-graphite-200 rounded-xl p-5 hover:border-indigo-500 transition-colors">
+    <Link
+      to={`/teams/${id}`}
+      className="block bg-white border border-graphite-200 rounded-xl p-5 hover:border-indigo-500 transition-colors"
+    >
       <div className="flex items-start justify-between">
         <h3 className="font-display text-base font-semibold text-graphite-900">
           {name}
@@ -39,6 +43,6 @@ export default function TeamCard({ name, memberCount, status }) {
           {memberCount} {memberCount === 1 ? "member" : "members"}
         </span>
       </div>
-    </div>
+    </Link>
   );
 }
