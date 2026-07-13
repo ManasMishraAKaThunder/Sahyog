@@ -46,3 +46,20 @@ export const recentActivity = [
     timestamp: "2026-07-12T11:30:00Z",
   },
 ];
+
+// --- Teams data ---
+
+export const TEAM_STATUS = {
+  ON_TRACK: "on_track",
+  AT_RISK: "at_risk",
+  BEHIND: "behind",
+};
+
+export const teams = [
+  { id: 1, name: "Platform Engineering", memberCount: 8, status: TEAM_STATUS.ON_TRACK },
+  { id: 2, name: "Frontend Guild", memberCount: 5, status: TEAM_STATUS.ON_TRACK },
+  { id: 3, name: "Data & Analytics", memberCount: 6, status: TEAM_STATUS.AT_RISK },
+  { id: 4, name: "DevOps & Infra", memberCount: 4, status: TEAM_STATUS.ON_TRACK },
+  { id: 5, name: "Growth", memberCount: 3, status: TEAM_STATUS.BEHIND },
+  { id: 6, name: "Security", memberCount: 4, status: TEAM_STATUS.ON_TRACK },
+];
