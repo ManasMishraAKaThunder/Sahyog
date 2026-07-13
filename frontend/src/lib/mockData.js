@@ -57,9 +57,11 @@ export const TEAM_STATUS = {
 
 export const teams = [
   { id: 1, name: "Platform Engineering", memberCount: 8, status: TEAM_STATUS.ON_TRACK },
-  { id: 2, name: "Frontend Guild", memberCount: 5, status: TEAM_STATUS.ON_TRACK },
+  { id: 2, name: "Frontend Team", memberCount: 5, status: TEAM_STATUS.ON_TRACK },
   { id: 3, name: "Data & Analytics", memberCount: 6, status: TEAM_STATUS.AT_RISK },
   { id: 4, name: "DevOps & Infra", memberCount: 4, status: TEAM_STATUS.ON_TRACK },
-  { id: 5, name: "Growth", memberCount: 3, status: TEAM_STATUS.BEHIND },
-  { id: 6, name: "Security", memberCount: 4, status: TEAM_STATUS.ON_TRACK },
+  { id: 5, name: "Backend Team", memberCount: 3, status: TEAM_STATUS.BEHIND },
+  { id: 6, name: "Testing Team", memberCount: 4, status: TEAM_STATUS.ON_TRACK },
+  {id: 7 , name: "Solarch", memberCount: 5, status: TEAM_STATUS.ON_TRACK},
+  {id: 8 , name: "Core Team", memberCount: 6, status: TEAM_STATUS.ON_TRACK},
 ];
