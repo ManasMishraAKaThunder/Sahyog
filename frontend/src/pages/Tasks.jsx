@@ -4,6 +4,7 @@ import Layout from '@/components/Layout.jsx'
 import TaskBoard from '@/components/TaskBoard.jsx'
 import TaskTable from '@/components/TaskTable.jsx'
 import { tasks } from '@/lib/mockData'
+import TaskDetailDrawer from '@/components/TaskDetailDrawer.jsx'
 
 function Tasks() {
   const [view, setView] = useState('board')
@@ -52,6 +53,7 @@ function Tasks() {
           <TaskTable tasks={tasks} onTaskClick={setSelectedTask} />
         )}
       </div>
+      <TaskDetailDrawer task={selectedTask} onClose={() => setSelectedTask(null)} />
     </Layout>
   )
 }
