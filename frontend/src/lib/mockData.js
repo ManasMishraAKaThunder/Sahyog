@@ -215,3 +215,35 @@ export const projects = [
   { id: 11, name: "Load Testing Framework", teamId: 6, status: PROJECT_STATUS.PLANNED, progress: 0, dueDate: "2026-09-10" },
   { id: 12, name: "Cross-Team Standards Doc", teamId: 7, status: PROJECT_STATUS.ON_HOLD, progress: 20, dueDate: "2026-08-20" },
 ];
+
+// --- Tasks data ---
+
+export const TASK_STATUS = {
+  TODO: "todo",
+  IN_PROGRESS: "in_progress",
+  IN_REVIEW: "in_review",
+  DONE: "done",
+};
+
+export const TASK_PRIORITY = {
+  LOW: "low",
+  MEDIUM: "medium",
+  HIGH: "high",
+};
+
+export const tasks = [
+  { id: 1, title: "Fix auth token refresh bug", projectId: 2, assignee: "Priya Nair", status: TASK_STATUS.IN_PROGRESS, priority: TASK_PRIORITY.HIGH, dueDate: "2026-07-22" },
+  { id: 2, title: "Set up rate limiting on gateway", projectId: 1, assignee: "Rohit Sharma", status: TASK_STATUS.TODO, priority: TASK_PRIORITY.MEDIUM, dueDate: "2026-07-25" },
+  { id: 3, title: "Design new sidebar collapse state", projectId: 3, assignee: "Nisha Reddy", status: TASK_STATUS.IN_REVIEW, priority: TASK_PRIORITY.LOW, dueDate: "2026-07-20" },
+  { id: 4, title: "Migrate button components to v2 tokens", projectId: 4, assignee: "Ishita Kapoor", status: TASK_STATUS.DONE, priority: TASK_PRIORITY.MEDIUM, dueDate: "2026-07-10" },
+  { id: 5, title: "Build Kafka consumer for task events", projectId: 5, assignee: "Rahul Verma", status: TASK_STATUS.IN_PROGRESS, priority: TASK_PRIORITY.HIGH, dueDate: "2026-07-28" },
+  { id: 6, title: "Draft Spring AI prompt templates", projectId: 6, assignee: "Kabir Chawla", status: TASK_STATUS.TODO, priority: TASK_PRIORITY.LOW, dueDate: "2026-08-02" },
+  { id: 7, title: "Write Helm chart for task-service", projectId: 7, assignee: "Riya Saxena", status: TASK_STATUS.IN_PROGRESS, priority: TASK_PRIORITY.MEDIUM, dueDate: "2026-07-26" },
+  { id: 8, title: "Clean up unused Terraform variables", projectId: 8, assignee: "Aman Gupta", status: TASK_STATUS.DONE, priority: TASK_PRIORITY.LOW, dueDate: "2026-07-04" },
+  { id: 9, title: "A/B test new signup CTA copy", projectId: 9, assignee: "Neha Choudhary", status: TASK_STATUS.IN_REVIEW, priority: TASK_PRIORITY.MEDIUM, dueDate: "2026-07-24" },
+  { id: 10, title: "Write Cypress tests for login flow", projectId: 10, assignee: "Omkar Patil", status: TASK_STATUS.TODO, priority: TASK_PRIORITY.HIGH, dueDate: "2026-07-27" },
+  { id: 11, title: "Set up k6 load test scenarios", projectId: 11, assignee: "Ritu Bansal", status: TASK_STATUS.TODO, priority: TASK_PRIORITY.LOW, dueDate: "2026-08-05" },
+  { id: 12, title: "Document API versioning standard", projectId: 12, assignee: "Shreya Ghosh", status: TASK_STATUS.IN_PROGRESS, priority: TASK_PRIORITY.MEDIUM, dueDate: "2026-07-30" },
+  { id: 13, title: "Review PR for gateway retry logic", projectId: 1, assignee: "Aditya Rao", status: TASK_STATUS.IN_REVIEW, priority: TASK_PRIORITY.HIGH, dueDate: "2026-07-21" },
+  { id: 14, title: "Add dark mode toggle to settings", projectId: 3, assignee: "Dev Patel", status: TASK_STATUS.TODO, priority: TASK_PRIORITY.LOW, dueDate: "2026-08-01" },
+];
