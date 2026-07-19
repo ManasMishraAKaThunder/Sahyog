@@ -1,4 +1,5 @@
-import { Search, Bell } from 'lucide-react'
+import { Search } from 'lucide-react'
+import NotificationBell from '@/components/NotificationBell.jsx'
 
 function Topbar() {
   return (
@@ -13,9 +14,7 @@ function Topbar() {
       </div>
 
       <div className="flex items-center gap-4">
-        <button className="relative text-graphite-700 hover:text-graphite-900">
-          <Bell size={20} />
-        </button>
+        <NotificationBell />
         <div className="w-9 h-9 rounded-full bg-indigo-500 text-white flex items-center justify-center font-semibold text-sm">
           S
         </div>
