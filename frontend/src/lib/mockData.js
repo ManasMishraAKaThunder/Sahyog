@@ -191,3 +191,27 @@ export const teamMembers = {
     { id: 41, name: "Preeti Nair", role: "Product Manager", email: "preeti.nair@sahyog.dev" },
   ],
 };
+
+// --- Projects data ---
+
+export const PROJECT_STATUS = {
+  PLANNED: "planned",
+  ACTIVE: "active",
+  ON_HOLD: "on_hold",
+  COMPLETED: "completed",
+};
+
+export const projects = [
+  { id: 1, name: "API Gateway Revamp", teamId: 1, status: PROJECT_STATUS.ACTIVE, progress: 65, dueDate: "2026-08-15" },
+  { id: 2, name: "Auth Service Migration", teamId: 1, status: PROJECT_STATUS.PLANNED, progress: 10, dueDate: "2026-09-01" },
+  { id: 3, name: "Dashboard Redesign", teamId: 2, status: PROJECT_STATUS.ACTIVE, progress: 80, dueDate: "2026-07-30" },
+  { id: 4, name: "Design System v2", teamId: 2, status: PROJECT_STATUS.COMPLETED, progress: 100, dueDate: "2026-06-20" },
+  { id: 5, name: "Analytics Pipeline Overhaul", teamId: 3, status: PROJECT_STATUS.ON_HOLD, progress: 35, dueDate: "2026-08-10" },
+  { id: 6, name: "Spring AI Insights Engine", teamId: 3, status: PROJECT_STATUS.PLANNED, progress: 5, dueDate: "2026-09-15" },
+  { id: 7, name: "Kubernetes Migration", teamId: 4, status: PROJECT_STATUS.ACTIVE, progress: 50, dueDate: "2026-08-25" },
+  { id: 8, name: "Terraform Module Cleanup", teamId: 4, status: PROJECT_STATUS.COMPLETED, progress: 100, dueDate: "2026-07-05" },
+  { id: 9, name: "Onboarding Funnel Experiment", teamId: 5, status: PROJECT_STATUS.ACTIVE, progress: 40, dueDate: "2026-08-05" },
+  { id: 10, name: "Test Automation Suite", teamId: 6, status: PROJECT_STATUS.ACTIVE, progress: 70, dueDate: "2026-07-28" },
+  { id: 11, name: "Load Testing Framework", teamId: 6, status: PROJECT_STATUS.PLANNED, progress: 0, dueDate: "2026-09-10" },
+  { id: 12, name: "Cross-Team Standards Doc", teamId: 7, status: PROJECT_STATUS.ON_HOLD, progress: 20, dueDate: "2026-08-20" },
+];
