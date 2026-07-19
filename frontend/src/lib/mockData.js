@@ -324,3 +324,31 @@ export const PERMISSION_MATRIX = {
     "View audit logs": false,
   },
 };
+
+// --- Notifications data ---
+
+export const NOTIFICATION_TYPE = {
+  TASK_ASSIGNED: "task_assigned",
+  STATUS_CHANGED: "status_changed",
+  MENTION: "mention",
+  DUE_SOON: "due_soon",
+};
+
+export const initialNotifications = [
+  { id: 1, type: NOTIFICATION_TYPE.TASK_ASSIGNED, message: "Priya assigned you \"Fix auth token refresh bug\"", timestamp: "2026-07-19T08:30:00Z", read: false },
+  { id: 2, type: NOTIFICATION_TYPE.MENTION, message: "Rohit mentioned you in \"API Gateway Revamp\"", timestamp: "2026-07-19T07:50:00Z", read: false },
+  { id: 3, type: NOTIFICATION_TYPE.STATUS_CHANGED, message: "\"Design new sidebar collapse state\" moved to In Review", timestamp: "2026-07-18T18:20:00Z", read: true },
+  { id: 4, type: NOTIFICATION_TYPE.DUE_SOON, message: "\"Write Cypress tests for login flow\" is due in 2 days", timestamp: "2026-07-18T15:00:00Z", read: true },
+  { id: 5, type: NOTIFICATION_TYPE.TASK_ASSIGNED, message: "Kavya assigned you \"Set up k6 load test scenarios\"", timestamp: "2026-07-18T11:40:00Z", read: true },
+  { id: 6, type: NOTIFICATION_TYPE.STATUS_CHANGED, message: "\"Migrate button components to v2 tokens\" moved to Done", timestamp: "2026-07-17T16:10:00Z", read: true },
+  { id: 7, type: NOTIFICATION_TYPE.MENTION, message: "Aditya mentioned you in \"Cross-Team Standards Doc\"", timestamp: "2026-07-17T09:25:00Z", read: true },
+];
+
+// Pool of fake incoming events for the simulated live feed
+export const NOTIFICATION_POOL = [
+  { type: NOTIFICATION_TYPE.TASK_ASSIGNED, message: "Meera assigned you \"Review PR for gateway retry logic\"" },
+  { type: NOTIFICATION_TYPE.STATUS_CHANGED, message: "\"Load Testing Framework\" moved to Active" },
+  { type: NOTIFICATION_TYPE.MENTION, message: "Farhan mentioned you in \"Onboarding Funnel Experiment\"" },
+  { type: NOTIFICATION_TYPE.DUE_SOON, message: "\"Document API versioning standard\" is due tomorrow" },
+  { type: NOTIFICATION_TYPE.TASK_ASSIGNED, message: "Sanya assigned you \"Draft Spring AI prompt templates\"" },
+];
