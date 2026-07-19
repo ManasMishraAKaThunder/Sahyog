@@ -247,3 +247,80 @@ export const tasks = [
   { id: 13, title: "Review PR for gateway retry logic", projectId: 1, assignee: "Aditya Rao", status: TASK_STATUS.IN_REVIEW, priority: TASK_PRIORITY.HIGH, dueDate: "2026-07-21" },
   { id: 14, title: "Add dark mode toggle to settings", projectId: 3, assignee: "Dev Patel", status: TASK_STATUS.TODO, priority: TASK_PRIORITY.LOW, dueDate: "2026-08-01" },
 ];
+
+// --- Users & Roles data ---
+
+export const ROLE = {
+  ADMIN: "admin",
+  MANAGER: "manager",
+  MEMBER: "member",
+};
+
+export const USER_STATUS = {
+  ACTIVE: "active",
+  INVITED: "invited",
+};
+
+export const users = [
+  { id: 1, name: "Aditya Rao", email: "aditya.rao@sahyog.dev", role: ROLE.ADMIN, status: USER_STATUS.ACTIVE, lastActive: "2026-07-19" },
+  { id: 2, name: "Priya Nair", email: "priya.nair@sahyog.dev", role: ROLE.MANAGER, status: USER_STATUS.ACTIVE, lastActive: "2026-07-18" },
+  { id: 3, name: "Rohit Sharma", email: "rohit.sharma@sahyog.dev", role: ROLE.MEMBER, status: USER_STATUS.ACTIVE, lastActive: "2026-07-19" },
+  { id: 4, name: "Alex Fernandes", email: "alex.fernandes@sahyog.dev", role: ROLE.MANAGER, status: USER_STATUS.ACTIVE, lastActive: "2026-07-17" },
+  { id: 5, name: "Ishita Kapoor", email: "ishita.kapoor@sahyog.dev", role: ROLE.MEMBER, status: USER_STATUS.ACTIVE, lastActive: "2026-07-19" },
+  { id: 6, name: "Sanya Bhatt", email: "sanya.bhatt@sahyog.dev", role: ROLE.MANAGER, status: USER_STATUS.ACTIVE, lastActive: "2026-07-16" },
+  { id: 7, name: "Kabir Chawla", email: "kabir.chawla@sahyog.dev", role: ROLE.MEMBER, status: USER_STATUS.INVITED, lastActive: "—" },
+  { id: 8, name: "Manish Kumar", email: "manish.kumar@sahyog.dev", role: ROLE.MANAGER, status: USER_STATUS.ACTIVE, lastActive: "2026-07-19" },
+  { id: 9, name: "Riya Saxena", email: "riya.saxena@sahyog.dev", role: ROLE.MEMBER, status: USER_STATUS.ACTIVE, lastActive: "2026-07-15" },
+  { id: 10, name: "Farhan Sheikh", email: "farhan.sheikh@sahyog.dev", role: ROLE.MANAGER, status: USER_STATUS.ACTIVE, lastActive: "2026-07-18" },
+  { id: 11, name: "Kavya Shetty", email: "kavya.shetty@sahyog.dev", role: ROLE.MANAGER, status: USER_STATUS.ACTIVE, lastActive: "2026-07-19" },
+  { id: 12, name: "Zaid Ansari", email: "zaid.ansari@sahyog.dev", role: ROLE.MEMBER, status: USER_STATUS.INVITED, lastActive: "—" },
+];
+
+export const PERMISSIONS = [
+  "View teams",
+  "Manage teams",
+  "View projects",
+  "Manage projects",
+  "Assign tasks",
+  "Delete tasks",
+  "Manage users",
+  "View analytics",
+  "View audit logs",
+];
+
+// true = permission granted for that role
+export const PERMISSION_MATRIX = {
+  [ROLE.ADMIN]: {
+    "View teams": true,
+    "Manage teams": true,
+    "View projects": true,
+    "Manage projects": true,
+    "Assign tasks": true,
+    "Delete tasks": true,
+    "Manage users": true,
+    "View analytics": true,
+    "View audit logs": true,
+  },
+  [ROLE.MANAGER]: {
+    "View teams": true,
+    "Manage teams": true,
+    "View projects": true,
+    "Manage projects": true,
+    "Assign tasks": true,
+    "Delete tasks": false,
+    "Manage users": false,
+    "View analytics": true,
+    "View audit logs": false,
+  },
+  [ROLE.MEMBER]: {
+    "View teams": true,
+    "Manage teams": false,
+    "View projects": true,
+    "Manage projects": false,
+    "Assign tasks": true,
+    "Delete tasks": false,
+    "Manage users": false,
+    "View analytics": false,
+    "View audit logs": false,
+  },
+};
