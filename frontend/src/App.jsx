@@ -6,6 +6,7 @@ import Teams from '@/pages/Teams.jsx'
 import Projects from '@/pages/Projects.jsx'
 import Tasks from '@/pages/Tasks.jsx'
 import TeamDetail from '@/pages/TeamDetail.jsx'
+import Roles from '@/pages/Roles.jsx'
 
 function App() {
   return (
@@ -14,10 +15,10 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/teams" element={<Teams />} />
+      <Route path="/teams/:id" element={<TeamDetail />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/tasks" element={<Tasks />} />
-      <Route path="/teams" element={<Teams />} />
-      <Route path="/teams/:id" element={<TeamDetail />} />
+      <Route path="/roles" element={<Roles />} />
     </Routes>
   )
 }
