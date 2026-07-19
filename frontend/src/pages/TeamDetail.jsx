@@ -1,7 +1,8 @@
 import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, Users2, FolderKanban, Calendar } from 'lucide-react'
 import Layout from '@/components/Layout.jsx'
-import { teams, TEAM_STATUS } from '@/lib/mockData'
+import MembersTable from '@/components/MembersTable.jsx'
+import { teams, teamMembers, TEAM_STATUS } from '@/lib/mockData'
 
 const STATUS_CONFIG = {
   [TEAM_STATUS.ON_TRACK]: { label: 'On Track', badgeClass: 'bg-success/10 text-success' },
@@ -12,6 +13,7 @@ const STATUS_CONFIG = {
 function TeamDetail() {
   const { id } = useParams()
   const team = teams.find((t) => t.id === Number(id))
+  const members = teamMembers[Number(id)] || []
 
   if (!team) {
     return (
@@ -70,6 +72,9 @@ function TeamDetail() {
           <p className="font-mono text-xl text-graphite-900 mt-2">{team.createdAt}</p>
         </div>
       </div>
+
+      <h2 className="font-display text-lg text-graphite-900 mt-8">Members</h2>
+      <MembersTable members={members} />
     </Layout>
   )
 }
