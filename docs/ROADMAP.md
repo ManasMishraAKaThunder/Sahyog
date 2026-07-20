@@ -3,18 +3,18 @@
 Realistic build order (each checked phase = built with real, working code and
 committed incrementally, not stubbed):
 
-- [ ] **Phase 1 — Frontend dashboard** (React + Vite + Tailwind)
+- [x] **Phase 1 — Frontend dashboard** (React + Vite + Tailwind)
   - [x] Project scaffold, design tokens, routing
-  - [ ] App shell: sidebar, topbar, layout
-  - [ ] Dashboard home (stat cards, team velocity chart, activity feed)
-  - [ ] Teams module (list, detail, members)
-  - [ ] Projects module (list, kanban board)
-  - [ ] Tasks module (board, table, detail drawer)
-  - [ ] Users & Roles/Permissions module
-  - [ ] Notifications (WebSocket live feed)
-  - [ ] Analytics/Reports module (charts)
-  - [ ] Settings, Audit Logs, System Health pages
-  - [ ] Auth screens (login, OAuth2 redirect handling)
+  - [x] App shell: sidebar, topbar, layout
+  - [x] Dashboard home (stat cards, team velocity chart, activity feed)
+  - [x] Teams module (list, detail, members)
+  - [x] Projects module (list, kanban board)
+  - [x] Tasks module (board, table, detail drawer)
+  - [x] Users & Roles/Permissions module
+  - [x] Notifications (WebSocket live feed)
+  - [x] Analytics/Reports module (charts)
+  - [x] Settings, Audit Logs, System Health pages
+  - [x] Auth screens (login, OAuth2 redirect handling)
 - [ ] **Phase 2 — Backend platform services**
   - [ ] config-server
   - [ ] discovery-server (Eureka)
