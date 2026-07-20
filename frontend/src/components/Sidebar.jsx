@@ -8,6 +8,8 @@ import {
   Bell,
   BarChart3,
   Settings,
+  ClipboardList,
+  HeartPulse,
 } from 'lucide-react'
 
 const navSections = [

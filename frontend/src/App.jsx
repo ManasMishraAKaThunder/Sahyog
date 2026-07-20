@@ -9,6 +9,7 @@ import TeamDetail from '@/pages/TeamDetail.jsx'
 import Roles from '@/pages/Roles.jsx'
 import Analytics from '@/pages/Analytics.jsx'
 import Settings from '@/pages/Settings.jsx'
+import AuditLogs from '@/pages/AuditLogs.jsx'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/roles" element={<Roles />} />
       <Route path="/analytics" element={<Analytics />} />
       <Route path="/settings" element={<Settings />} />
+      <Route path="/audit-logs" element={<AuditLogs />} />
     </Routes>
   )
 }
