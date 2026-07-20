@@ -352,3 +352,29 @@ export const NOTIFICATION_POOL = [
   { type: NOTIFICATION_TYPE.DUE_SOON, message: "\"Document API versioning standard\" is due tomorrow" },
   { type: NOTIFICATION_TYPE.TASK_ASSIGNED, message: "Sanya assigned you \"Draft Spring AI prompt templates\"" },
 ];
+
+// --- Analytics data ---
+
+export const workloadDistribution = [
+  { team: "Platform Engineering", tasks: 22 },
+  { team: "Frontend Team", tasks: 14 },
+  { team: "Data & Analytics", tasks: 18 },
+  { team: "DevOps & Infra", tasks: 9 },
+  { team: "Backend Team", tasks: 11 },
+  { team: "Testing Team", tasks: 13 },
+];
+
+export const completionTrend = [
+  { week: "Wk 1", completed: 12, total: 20 },
+  { week: "Wk 2", completed: 18, total: 24 },
+  { week: "Wk 3", completed: 15, total: 22 },
+  { week: "Wk 4", completed: 21, total: 26 },
+  { week: "Wk 5", completed: 19, total: 23 },
+  { week: "Wk 6", completed: 24, total: 28 },
+];
+
+export const analyticsSummary = {
+  avgVelocity: 34.5,
+  avgCompletionRate: 78,
+  totalTasksThisMonth: 142,
+};
