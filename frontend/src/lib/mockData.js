@@ -399,3 +399,22 @@ export const auditLogs = [
   { id: 5, actor: "Aditya Rao", action: "Invited kabir.chawla@sahyog.dev", timestamp: "2026-07-17T11:30:00Z" },
   { id: 6, actor: "Kavya Shetty", action: "Archived project \"Legacy QA Suite\"", timestamp: "2026-07-16T08:50:00Z" },
 ];
+
+// --- System health data ---
+
+export const SERVICE_STATUS = {
+  UP: "up",
+  DEGRADED: "degraded",
+  DOWN: "down",
+};
+
+export const systemServices = [
+  { id: 1, name: "API Gateway", status: SERVICE_STATUS.UP, uptime: "99.98%", latencyMs: 42 },
+  { id: 2, name: "Auth Service", status: SERVICE_STATUS.UP, uptime: "99.95%", latencyMs: 58 },
+  { id: 3, name: "User Service", status: SERVICE_STATUS.UP, uptime: "99.99%", latencyMs: 35 },
+  { id: 4, name: "Team Service", status: SERVICE_STATUS.UP, uptime: "99.97%", latencyMs: 40 },
+  { id: 5, name: "Project Service", status: SERVICE_STATUS.DEGRADED, uptime: "98.20%", latencyMs: 210 },
+  { id: 6, name: "Task Service", status: SERVICE_STATUS.UP, uptime: "99.94%", latencyMs: 47 },
+  { id: 7, name: "Notification Service", status: SERVICE_STATUS.UP, uptime: "99.90%", latencyMs: 65 },
+  { id: 8, name: "Analytics Service", status: SERVICE_STATUS.DOWN, uptime: "94.10%", latencyMs: null },
+];
