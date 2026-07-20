@@ -1,3 +1,4 @@
+// src/store/useNotifications.js
 import { create } from 'zustand'
 import { initialNotifications, NOTIFICATION_POOL } from '@/lib/mockData'
 

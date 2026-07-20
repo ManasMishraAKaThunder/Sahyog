@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Bell, UserPlus, ArrowRightLeft, AtSign, Clock } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { useNotifications } from '@/store/useNotifications'
+import { useNotifications } from '@/store/useNotification'
 import { NOTIFICATION_TYPE } from '@/lib/mockData'
 
 const ICON_CONFIG = {
