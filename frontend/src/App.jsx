@@ -7,26 +7,32 @@ import Projects from '@/pages/Projects.jsx'
 import Tasks from '@/pages/Tasks.jsx'
 import TeamDetail from '@/pages/TeamDetail.jsx'
 import Roles from '@/pages/Roles.jsx'
+import Notifications from '@/pages/Notifications.jsx'
 import Analytics from '@/pages/Analytics.jsx'
 import Settings from '@/pages/Settings.jsx'
 import AuditLogs from '@/pages/AuditLogs.jsx'
 import SystemHealth from '@/pages/SystemHealth.jsx'
+import OAuthCallback from '@/pages/OAuthCallback.jsx'
+import ProtectedRoute from '@/components/ProtectedRoute.jsx'
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/teams" element={<Teams />} />
-      <Route path="/teams/:id" element={<TeamDetail />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/tasks" element={<Tasks />} />
-      <Route path="/roles" element={<Roles />} />
-      <Route path="/analytics" element={<Analytics />} />
-      <Route path="/settings" element={<Settings />} />
-      <Route path="/audit-logs" element={<AuditLogs />} />
-      <Route path="/system-health" element={<SystemHealth />} />
+      <Route path="/oauth/callback" element={<OAuthCallback />} />
+
+      <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+      <Route path="/teams" element={<ProtectedRoute><Teams /></ProtectedRoute>} />
+      <Route path="/teams/:id" element={<ProtectedRoute><TeamDetail /></ProtectedRoute>} />
+      <Route path="/projects" element={<ProtectedRoute><Projects /></ProtectedRoute>} />
+      <Route path="/tasks" element={<ProtectedRoute><Tasks /></ProtectedRoute>} />
+      <Route path="/roles" element={<ProtectedRoute><Roles /></ProtectedRoute>} />
+      <Route path="/notifications" element={<ProtectedRoute><Notifications /></ProtectedRoute>} />
+      <Route path="/analytics" element={<ProtectedRoute><Analytics /></ProtectedRoute>} />
+      <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
+      <Route path="/audit-logs" element={<ProtectedRoute><AuditLogs /></ProtectedRoute>} />
+      <Route path="/system-health" element={<ProtectedRoute><SystemHealth /></ProtectedRoute>} />
     </Routes>
   )
 }
