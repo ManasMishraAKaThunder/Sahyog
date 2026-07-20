@@ -10,6 +10,7 @@ import Roles from '@/pages/Roles.jsx'
 import Analytics from '@/pages/Analytics.jsx'
 import Settings from '@/pages/Settings.jsx'
 import AuditLogs from '@/pages/AuditLogs.jsx'
+import SystemHealth from '@/pages/SystemHealth.jsx'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path="/analytics" element={<Analytics />} />
       <Route path="/settings" element={<Settings />} />
       <Route path="/audit-logs" element={<AuditLogs />} />
+      <Route path="/system-health" element={<SystemHealth />} />
     </Routes>
   )
 }
