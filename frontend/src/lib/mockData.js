@@ -378,3 +378,13 @@ export const analyticsSummary = {
   avgCompletionRate: 78,
   totalTasksThisMonth: 142,
 };
+
+// --- Settings data ---
+
+export const currentUserSettings = {
+  name: "Sam Patel",
+  email: "sam.patel@sahyog.dev",
+  role: "Admin",
+  emailNotifications: true,
+  darkMode: false,
+};
