@@ -388,3 +388,14 @@ export const currentUserSettings = {
   emailNotifications: true,
   darkMode: false,
 };
+
+// --- Audit logs data ---
+
+export const auditLogs = [
+  { id: 1, actor: "Aditya Rao", action: "Updated role for Kabir Chawla to Member", timestamp: "2026-07-19T10:12:00Z" },
+  { id: 2, actor: "Priya Nair", action: "Deleted task \"Old migration script\"", timestamp: "2026-07-19T09:40:00Z" },
+  { id: 3, actor: "Sanya Bhatt", action: "Created project \"Analytics Pipeline Overhaul\"", timestamp: "2026-07-18T17:05:00Z" },
+  { id: 4, actor: "Manish Kumar", action: "Changed team status for DevOps & Infra to On Track", timestamp: "2026-07-18T14:22:00Z" },
+  { id: 5, actor: "Aditya Rao", action: "Invited kabir.chawla@sahyog.dev", timestamp: "2026-07-17T11:30:00Z" },
+  { id: 6, actor: "Kavya Shetty", action: "Archived project \"Legacy QA Suite\"", timestamp: "2026-07-16T08:50:00Z" },
+];
