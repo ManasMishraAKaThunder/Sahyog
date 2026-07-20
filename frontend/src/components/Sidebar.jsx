@@ -35,7 +35,11 @@ const navSections = [
   },
   {
     label: 'System',
-    items: [{ to: '/settings', label: 'Settings', icon: Settings }],
+    items: [
+      { to: '/settings', label: 'Settings', icon: Settings },
+      { to: '/audit-logs', label: 'Audit Logs', icon: ClipboardList },
+      { to: '/system-health', label: 'System Health', icon: HeartPulse },
+    ],
   },
 ]
 
