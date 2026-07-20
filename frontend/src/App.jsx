@@ -8,6 +8,7 @@ import Tasks from '@/pages/Tasks.jsx'
 import TeamDetail from '@/pages/TeamDetail.jsx'
 import Roles from '@/pages/Roles.jsx'
 import Analytics from '@/pages/Analytics.jsx'
+import Settings from '@/pages/Settings.jsx'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/tasks" element={<Tasks />} />
       <Route path="/roles" element={<Roles />} />
       <Route path="/analytics" element={<Analytics />} />
+      <Route path="/settings" element={<Settings />} />
     </Routes>
   )
 }
