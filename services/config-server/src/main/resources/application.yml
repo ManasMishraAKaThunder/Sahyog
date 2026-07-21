@@ -12,3 +12,8 @@ spring:
         native:
           search-locations: file:./config-repo
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
