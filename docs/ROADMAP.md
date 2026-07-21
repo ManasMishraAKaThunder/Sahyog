@@ -16,9 +16,9 @@ committed incrementally, not stubbed):
   - [x] Settings, Audit Logs, System Health pages
   - [x] Auth screens (login, OAuth2 redirect handling)
 - [ ] **Phase 2 — Backend platform services**
-  - [ ] config-server
-  - [ ] discovery-server (Eureka)
-  - [ ] api-gateway
+  - [x] config-server
+  - [x] discovery-server (Eureka)
+  - [x] api-gateway
   - [ ] auth-service (OAuth2/JWT + Keycloak realm config)
 - [ ] **Phase 3 — Domain microservices**
   - [ ] user-service (MySQL)
