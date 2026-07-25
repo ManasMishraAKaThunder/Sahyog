@@ -15,11 +15,11 @@ committed incrementally, not stubbed):
   - [x] Analytics/Reports module (charts)
   - [x] Settings, Audit Logs, System Health pages
   - [x] Auth screens (login, OAuth2 redirect handling)
-- [ ] **Phase 2 — Backend platform services**
+- [x] **Phase 2 — Backend platform services**
   - [x] config-server
   - [x] discovery-server (Eureka)
   - [x] api-gateway
-  - [ ] auth-service (OAuth2/JWT + Keycloak realm config)
+  - [x] auth-service (OAuth2/JWT + Keycloak realm config)
 - [ ] **Phase 3 — Domain microservices**
   - [ ] user-service (MySQL)
   - [ ] team-service (MySQL)
