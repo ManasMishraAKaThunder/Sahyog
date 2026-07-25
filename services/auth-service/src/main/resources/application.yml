@@ -1,14 +1,29 @@
 server:
-  port: 8081
+  port: 8085
 
 spring:
   application:
-    name: auth-service
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8180/realms/sahyog}
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/api/auth/**
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:5173"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - PATCH
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
 
 eureka:
   client:
@@ -21,8 +36,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info
-
-logging:
-  level:
-    root: INFO
+        include: health,info,gateway
